@@ -1,0 +1,167 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	/*height: 100%;*/
+}
+
+body {
+	/*height: 100%;*/
+}
+
+#head {
+	background: black;
+	width: 400px;
+	height: 100%;
+	float: left;
+	position: fixed;
+}
+
+#head p {
+	font: italic bold 20px/2em arial, sans-serif;
+	color: white;
+	text-align: center;
+	margin: 20px 0px;
+	padding: 5px;
+}
+
+#headPic {
+	margin-top: 20px;
+	width: 100%;
+	/*height: 100px;*/
+}
+
+#headPic img {
+	width: 100px;
+	border: 2px black solid;
+	border-radius: 50%;
+	-webkit-filter: invert(1);
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#category {
+	width: 100%;
+	/*padding: 20px;*/
+	margin: 0px auto;
+	text-align: center;
+}
+
+#category ul {
+	margin: 0px 20px;
+}
+
+#category ul li {
+	display: inline-block;
+	margin: 5px 0px;
+}
+
+#category a {
+	padding: 5px;
+	font: normal 16px/2em arial, sans-serif;
+	color: white;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+#content {
+	margin-left: 420px;
+	margin-top: 20px;
+	background: white;
+	float: left;
+}
+
+#article_title {
+	/*margin: 20px;*/
+	font: bold 30px/1.5em arial, sans-serif;
+}
+
+#article_author {
+	margin-right: 10px;
+	font: italic normal 16px/1.5em arial, sans-serif;
+	color: gainsboro;
+}
+
+#article_time {
+	font: italic normal 16px/1.5em arial, sans-serif;
+	color: gainsboro;
+}
+
+#article_content {
+	overflow: hidden;
+}
+
+#social_media {
+	position: absolute;
+	bottom: 10px;
+	right: 110px;
+}
+
+#social_media a {
+	margin-right: 10px;
+}
+
+#social_media img {
+	width: 30px;
+}
+
+#social_media p {
+	display: inline-block;
+	margin: 0px;
+}
+
+@media only screen and (max-width: 576px) {
+	#head {
+		float: none;
+		clear: both;
+		height: 400px;
+		width: 100%;
+		position: absolute;
+	}
+	#category a {
+		font: normal 16px/2em arial, sans-serif;
+	}
+	#headPic img {
+		width: 60px;
+	}
+	#social_media {
+		position: initial;
+		margin: 60px auto;
+		width: 200px;
+		height: 50px;
+		text-align: center;
+	}
+	#content {
+		margin-left: 0px;
+		margin-top: 20px;
+		width: 100%;
+		position: absolute;
+		left: 0px;
+		top: 400px;
+		float: none;
+		word-wrap: break-word;
+	}
+	article {
+		margin: 20px;
+	}
+	#article_title {
+		/*margin: 20px;*/
+		font: bold 24px/1.5em arial, sans-serif;
+	}
+	#article_author {
+		margin-right: 5px;
+		font: italic normal 12px/1.5em arial, sans-serif;
+		color: gainsboro;
+	}
+	#article_time {
+		font: italic normal 12px/1.5em arial, sans-serif;
+		color: gainsboro;
+	}
+	#article_content {
+		overflow: hidden;
+	}
+}
